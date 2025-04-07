@@ -14,11 +14,13 @@ Azure Virtual Desktop is a managed service that provides a Microsoft control pla
 
 ## RBAC design
 
-RBAC supports the separation of duties for the various teams and individuals that manage the deployment of Azure Virtual Desktop. As part of the landing zone design, you need to decide who assumes the various roles. You then need to create a security group for each role to simplify adding and removing users to and from roles.
+Role-Based Access Control (RBAC) is essential for enforcing the principle of least privilege and ensuring a clear separation of duties in Azure Virtual Desktop (AVD) environments. As part of the landing zone design, you need to decide who assumes the various roles. You then need to create a security group for each role to simplify adding and removing users to and from roles.
 
 Azure Virtual Desktop provides custom Azure roles that are designed for each functional area. For information about how these roles are configured, see [Built-in roles for Azure Virtual Desktop](/azure/virtual-desktop/rbac).
 
 [Azure built-in roles](/azure/role-based-access-control/built-in-roles) can be created and defined as part of the Cloud Adoption Framework for Azure deployment. RBAC roles that are specific to Azure Virtual Desktop may need to be combined with other Azure RBAC roles to provide the complete set of permissions users need for Azure Virtual Desktop and for other Azure services like virtual machines and networking.
+
+Consider using Privileged Identity Management (PIM) to assign these roles with just-in-time access and approval workflows for elevated privileges.
 
 ## Azure Virtual Desktop design considerations
 
