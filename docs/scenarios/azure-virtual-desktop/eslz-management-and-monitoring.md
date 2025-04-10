@@ -80,6 +80,20 @@ Review the following considerations and recommendations for infrastructure manag
 - Configure diagnostic settings, events, and performance counters by implementing an [Azure Virtual Desktop Insights workbook](/azure/virtual-desktop/insights).
 - Set up Network Performance Monitor in the same region as your Azure Virtual Network and session hosts.
 - Incorporate Azure policies and governance for enterprise-scale into the Azure Virtual Desktop landing zone.
+- 
+
+> 📘 **Tip: Use Azure Monitor Baseline Alerts for AVD Monitoring**
+>
+> Monitoring is a critical part of any enterprise-scale Azure Virtual Desktop (AVD) deployment. Instead of creating alerts from scratch, you can accelerate implementation and follow best practices by using the **Azure Monitor Baseline Alerts (AMBA)**.
+>
+> AMBA provides a curated set of alert rules based on Microsoft’s operational recommendations for Azure resources, including AVD-specific components like host pools and session hosts.
+>
+> Benefits include:
+> - Faster onboarding with **predefined alert rules**.
+> - **Consistency** across environments.
+> - Better alignment with operational excellence in the **Well-Architected Framework**.
+>
+> 👉 Get started: [Azure Monitor Baseline Alerts for AVD](https://azure.github.io/azure-monitor-baseline-alerts/patterns/specialized/avd/)
 
 ## Next steps
 
