@@ -42,6 +42,10 @@ Consider using Privileged Identity Management (PIM) to assign these roles with j
 - When using Windows Hello for Business or smart-card authentication, the initiating client must be able to communicate with the domain controller because these authentication methods use Kerberos to sign in. For more information, see [Supported authentication methods](/azure/virtual-desktop/authentication).
 - Single sign-on can improve user experience, but it requires additional configuration and is only supported using Active Directory Federation Services. For more information, see [Configure AD FS single sign-on for Azure Virtual Desktop](/azure/virtual-desktop/configure-adfs-sso).
 
+> [!TIP]  
+> While AD FS is still supported for single sign-on, organizations should evaluate modern alternatives like **Microsoft Entra hybrid join with certificate trust** or **cloud Kerberos trust**. These options reduce infrastructure dependencies and simplify configuration while maintaining secure SSO experiences. For more information, see [Hybrid certificate trust](https://learn.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-trust) and [Cloud Kerberos trust](https://learn.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/deploy/hybrid-cloud-kerberos-trust?tabs=intune).
+
+
 ### Supported identity scenarios
 
 The following table summarizes identity scenarios that Azure Virtual Desktop currently supports:
