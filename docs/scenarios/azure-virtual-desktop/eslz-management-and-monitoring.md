@@ -48,6 +48,20 @@ Read more about [creating data collection rules](/azure/azure-monitor/agents/dat
 
 For a glossary, data storage cost estimations, and more troubleshooting guidance, see [Azure Monitor next steps](/azure/virtual-desktop/azure-monitor#next-steps).
 
+> 📘 **Tip: Use Azure Monitor Baseline Alerts for AVD Monitoring**
+>
+> Monitoring is a critical part of any enterprise-scale Azure Virtual Desktop (AVD) deployment. Instead of creating alerts from scratch, you can accelerate implementation and follow best practices by using the **Azure Monitor Baseline Alerts (AMBA)**.
+>
+> AMBA provides a curated set of alert rules based on Microsoft’s operational recommendations for Azure resources, including AVD-specific components like host pools and session hosts.
+>
+> Benefits include:
+> - Faster onboarding with **predefined alert rules**.
+> - **Consistency** across environments.
+> - Better alignment with operational excellence in the **Well-Architected Framework**.
+>
+> 👉 Get started: [Azure Monitor Baseline Alerts for AVD](https://azure.github.io/azure-monitor-baseline-alerts/patterns/specialized/avd/)
+
+
 ## Infrastructure management and monitoring
 
 Review the following considerations and recommendations for infrastructure management and monitoring of Azure Virtual Desktop.
