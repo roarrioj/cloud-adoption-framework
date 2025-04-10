@@ -244,8 +244,10 @@ You can use RDP Shortpath in two ways:
   - **A direct UDP connection** between a client and a session host that uses the STUN protocol.
   - **An indirect UDP connection** that uses the TURN protocol with a relay between an RDP client and a session host. This option is used if the gateway or router doesn't allow direct UDP connections.
 
-    > [!NOTE]
-    > Using RDP Shortpath for public networks with TURN for Azure Virtual Desktop is currently in preview. For more information, see [RDP Shortpath for Azure Virtual Desktop](/azure/virtual-desktop/rdp-shortpath).
+> [!IMPORTANT]
+> - RDP Shortpath for public networks via STUN for Azure Virtual Desktop is available in the Azure public cloud and Azure Government cloud.
+> - RDP Shortpath for public networks via TURN for Azure Virtual Desktop is only available in the Azure public cloud.
+ For more information, see [RDP Shortpath for Azure Virtual Desktop](/azure/virtual-desktop/rdp-shortpath).
 
 The RDP path extends RDP multi-transport capabilities. It doesn't replace the reverse connect transport but complements it.
 
