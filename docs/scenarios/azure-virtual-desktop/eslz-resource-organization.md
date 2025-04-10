@@ -112,6 +112,18 @@ Common uses for tags include:
 
 - **Cost optimization:** You can use tags to allocate resources to specific teams who are responsible for the costs. In [Microsoft Cost Management](/azure/cost-management-billing/), you can filter reports by the cost center tag to track charges by team or department.
 
+> 💡 **Tip: Enforce Tags with Azure Policy Instead of Manual Tagging**
+>
+> Applying tags manually can lead to common issues such as inconsistent tag names (`CostCenter` vs `costcenter`), missing required tags, or human error in values. To avoid these pitfalls, use **Azure Policy** to enforce tag governance automatically.
+>
+> With Azure Policy, you can:
+> - Automatically **add default tags** to resources during deployment.
+> - **Audit** or **deny** resources that are missing required tags.
+> - Ensure tag **naming conventions and values** are consistent across your environment.
+>
+> 👉 Learn more: [Azure Policy for Tag Enforcement](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-policies)
+
+
 ## Related resources
 
 For more information about Azure Virtual Desktop organization and management, see:
