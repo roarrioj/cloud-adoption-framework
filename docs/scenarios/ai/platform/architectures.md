@@ -3,7 +3,7 @@ title: AI architecture guidance to build AI workloads on Azure
 description: Learn to find AI architectures and guides to build AI workloads with Azure AI platform services (PaaS).
 author: stephen-sumner
 ms.author: ssumner
-ms.date: 11/01/2024
+ms.date: 04/29/2025
 ms.topic: conceptual
 ---
 
@@ -44,7 +44,6 @@ This article offers architecture guidance for organizations running AI workloads
 | [Predictive analytics architecture](/azure/architecture/ai-ml/idea/personalized-offers)| Architecture | Any|
 | [Azure Machine Learning](/azure/architecture/ai-ml/#azure-machine-learning)| Guides | Any |
 | [MLOps](/azure/architecture/ai-ml/guide/machine-learning-operations-v2)| Guides|Any |
-| [Team Data Science Process](/azure/architecture/data-science-process/overview) | Guides|Any |
 
 ## Use the AI design areas as a framework
 

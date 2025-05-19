@@ -3,7 +3,7 @@ title: Security recommendations for AI workloads on Azure infrastructure (IaaS)
 description: Learn how to secure AI workloads on Azure infrastructure (IaaS).
 author: stephen-sumner
 ms.author: rajanaki
-ms.date: 11/01/2024
+ms.date: 04/30/2025
 ms.topic: conceptual
 ---
 
@@ -29,9 +29,9 @@ Securing networks involves setting up private endpoints, Network Security Groups
 
 - *Implement Network Security Groups (NSGs).* NSGs can be complex. Ensure you have a clear understanding of the NSG rules and their implications when setting up your Azure infrastructure for AI workloads.
 
-- *Use Application Security Groups*. If you need to label traffic at a greater granularity than what virtual networks provide, consider using [Application Security Groups](/azure/virtual-network/application-security-groups).
+  - *Understand NSG prioritization rules*. [NSG](/azure/virtual-network/network-security-groups-overview) rules have a priority order. Understand this order to avoid conflicts and ensure the smooth running of your AI workloads.
 
-- *Understand NSG prioritization rules*. [NSG](/azure/virtual-network/network-security-groups-overview) rules have a priority order. Understand this order to avoid conflicts and ensure the smooth running of your AI workloads.
+- *Use Application Security Groups*. If you need to label traffic at a greater granularity than what virtual networks provide, consider using [Application Security Groups](/azure/virtual-network/application-security-groups).
 
 - *Use a network firewall.* If you’re using a hub-spoke topology, deploy a [network firewall](/azure/networking/fundamentals/networking-overview#firewall) to inspect and filter network traffic between the spokes.
 
@@ -43,7 +43,7 @@ Securing data includes encrypting data at rest and in transit, along with protec
 
 - *Encrypt data*: Encrypt data at rest and in transit using strong encryption technologies between each service in the architecture.
 
-- *Protect secrets*: Protect secrets by storing them in a key vault or a hardware security module and routinely rotate them.
+- *Protect secrets*: Protect secrets by storing them in a key vault or a [hardware security module](/azure/key-vault/managed-hsm/overview) and routinely rotate them.
 
 ## Secure access
 
@@ -51,7 +51,7 @@ Securing access means configuring authentication and access control mechanisms t
 
 - *Configure authentication*: Enable multifactor authentication (MFA) and prefer secondary administrative accounts or just-in-time access for sensitive accounts. Limit control plane access using services like Azure Bastion as secure entry points into private networks.
 
-- *Use Conditional Access Policies.* Require MFA for accessing critical AI resources to enhance security. Restrict access to AI infrastructure based on geographic locations or trusted IP ranges. Ensure that only compliant devices (those meeting security requirements) can access AI resources. Implement risk-based conditional access policies that respond to unusual sign-in activity or suspicious behavior. Use signals like user location, device state, and sign-in behavior to trigger extra verification steps.
+- *Use Conditional Access Policies.* Require MFA for accessing critical AI resources to enhance security. Restrict access to AI infrastructure based on geographic locations or trusted IP ranges. Ensure that only compliant devices (those meeting security requirements) can access AI resources. Implement risk-based Conditional Access policies that respond to unusual sign-in activity or suspicious behavior. Use signals like user location, device state, and sign-in behavior to trigger extra verification steps.
 
 - *Configure least privilege access.* Configure least privilege access by implementing role-based access control (RBAC) to provide minimal access to data and services. Assign roles to users and groups based on their responsibilities. Use Azure RBAC to fine-tune access control for specific resources such as virtual machines and storage accounts. Ensure users have only the minimum level of access necessary to perform their tasks. Regularly review and adjust permissions to prevent privilege creep.
 
